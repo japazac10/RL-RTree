@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b69fd4ac39598f6e095c702d2c63f95a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b69fd4ac39598f6e095c702d2c63f95a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b69fd4ac39598f6e095c702d2c63f95a = L.map(
+                "map_b69fd4ac39598f6e095c702d2c63f95a",
+                {
+                    center: [-12.1205, -77.0305],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b0f81fb250a49e50ea44752a8c730b2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4b0f81fb250a49e50ea44752a8c730b2.addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var rectangle_cad0fdd701f4aa2dba17307104cd0863 = L.rectangle(
+                [[-12.123, -77.033], [-12.118, -77.028]],
+                {"bubblingMouseEvents": true, "color": "#ff7800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var marker_74a53211e8413c85655f98b1137f2682 = L.marker(
+                [-12.1186511, -77.0327152],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_d49d5152047fdb22858477e63eb0c7b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_510e0c5ac781ece06255dc039e633f76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ddf0a50b0e9130c30bb7269520cd54b = $(`<div id="html_9ddf0a50b0e9130c30bb7269520cd54b" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>DoubleTree by Hilton Lima Miraflores El Pardo</div>`)[0];
+                popup_510e0c5ac781ece06255dc039e633f76.setContent(html_9ddf0a50b0e9130c30bb7269520cd54b);
+            
+        
+
+        marker_74a53211e8413c85655f98b1137f2682.bindPopup(popup_510e0c5ac781ece06255dc039e633f76)
+        ;
+
+        
+    
+    
+                marker_74a53211e8413c85655f98b1137f2682.setIcon(icon_d49d5152047fdb22858477e63eb0c7b9);
+            
+    
+            var marker_f67dbeebfa060f9a97fe7abb0ab8a2cb = L.marker(
+                [-12.1220046, -77.0322278],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_5c13ef7846bae93e6f5d28c7953f2b9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b93fe6d4efb402484282808657200a7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3132fd33d1659ea4dcf2c69ba86c32ce = $(`<div id="html_3132fd33d1659ea4dcf2c69ba86c32ce" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Hotel Las Palmas</div>`)[0];
+                popup_b93fe6d4efb402484282808657200a7e.setContent(html_3132fd33d1659ea4dcf2c69ba86c32ce);
+            
+        
+
+        marker_f67dbeebfa060f9a97fe7abb0ab8a2cb.bindPopup(popup_b93fe6d4efb402484282808657200a7e)
+        ;
+
+        
+    
+    
+                marker_f67dbeebfa060f9a97fe7abb0ab8a2cb.setIcon(icon_5c13ef7846bae93e6f5d28c7953f2b9d);
+            
+    
+            var marker_9671dab0a21e890e018efe59b9f31c92 = L.marker(
+                [-12.119812, -77.0318531],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_41ab3905147d3037443ed4056c3720c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d9ff09401da30aca88cd8fdd1a10122 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d154869dda723f1c4c3dd721cdd4e16 = $(`<div id="html_5d154869dda723f1c4c3dd721cdd4e16" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>José Antonio Deluxe Hotel</div>`)[0];
+                popup_1d9ff09401da30aca88cd8fdd1a10122.setContent(html_5d154869dda723f1c4c3dd721cdd4e16);
+            
+        
+
+        marker_9671dab0a21e890e018efe59b9f31c92.bindPopup(popup_1d9ff09401da30aca88cd8fdd1a10122)
+        ;
+
+        
+    
+    
+                marker_9671dab0a21e890e018efe59b9f31c92.setIcon(icon_41ab3905147d3037443ed4056c3720c1);
+            
+    
+            var marker_254b8ed2d99dd23de323db1272929178 = L.marker(
+                [-12.1221355, -77.0316328],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_f70032a5103fea0a2ac3dd726c89d256 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa189cbdc511f5adb99da1263abb9251 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24883aed8cdb0cb6b009e7bd63c402f3 = $(`<div id="html_24883aed8cdb0cb6b009e7bd63c402f3" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Miraflores Cityhotel</div>`)[0];
+                popup_fa189cbdc511f5adb99da1263abb9251.setContent(html_24883aed8cdb0cb6b009e7bd63c402f3);
+            
+        
+
+        marker_254b8ed2d99dd23de323db1272929178.bindPopup(popup_fa189cbdc511f5adb99da1263abb9251)
+        ;
+
+        
+    
+    
+                marker_254b8ed2d99dd23de323db1272929178.setIcon(icon_f70032a5103fea0a2ac3dd726c89d256);
+            
+    
+            var marker_0ec56428df9d808c42eb225875eb28c6 = L.marker(
+                [-12.1181508, -77.0304795],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_366c995314052eab52c56799efa0dbfc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f03e246358a8ccf704b1319d5905045 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2881ed008c36bf72e48b7bee77ca8d0 = $(`<div id="html_d2881ed008c36bf72e48b7bee77ca8d0" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Allpa Hotel & Suites</div>`)[0];
+                popup_8f03e246358a8ccf704b1319d5905045.setContent(html_d2881ed008c36bf72e48b7bee77ca8d0);
+            
+        
+
+        marker_0ec56428df9d808c42eb225875eb28c6.bindPopup(popup_8f03e246358a8ccf704b1319d5905045)
+        ;
+
+        
+    
+    
+                marker_0ec56428df9d808c42eb225875eb28c6.setIcon(icon_366c995314052eab52c56799efa0dbfc);
+            
+    
+            var marker_71880675c252e5faff08660464468baa = L.marker(
+                [-12.1185085, -77.030212],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_c24367ca742cd21f59dd2a173b282767 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e1844bf5fa70caafcf3de4901233392 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c2d03662bdc1e87510d843db7c3dc0c = $(`<div id="html_8c2d03662bdc1e87510d843db7c3dc0c" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Carmel Hotel</div>`)[0];
+                popup_6e1844bf5fa70caafcf3de4901233392.setContent(html_8c2d03662bdc1e87510d843db7c3dc0c);
+            
+        
+
+        marker_71880675c252e5faff08660464468baa.bindPopup(popup_6e1844bf5fa70caafcf3de4901233392)
+        ;
+
+        
+    
+    
+                marker_71880675c252e5faff08660464468baa.setIcon(icon_c24367ca742cd21f59dd2a173b282767);
+            
+    
+            var marker_ff69e862806e3950f85078270574809b = L.marker(
+                [-12.1229351, -77.0287784],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_72df44bf9a4534ae5cc59247763130a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d5f34f35e375bcd6477645893cd3e4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a611c3cc8f26c619306d3a8f620f54d2 = $(`<div id="html_a611c3cc8f26c619306d3a8f620f54d2" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Claro Clav, Calle Shell 325</div>`)[0];
+                popup_0d5f34f35e375bcd6477645893cd3e4c.setContent(html_a611c3cc8f26c619306d3a8f620f54d2);
+            
+        
+
+        marker_ff69e862806e3950f85078270574809b.bindPopup(popup_0d5f34f35e375bcd6477645893cd3e4c)
+        ;
+
+        
+    
+    
+                marker_ff69e862806e3950f85078270574809b.setIcon(icon_72df44bf9a4534ae5cc59247763130a7);
+            
+    
+            var marker_901c127732500e9ec6a2a9c4d44d1d96 = L.marker(
+                [-12.1182096, -77.0317894],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_b7bf4f2923686e0944dea7db5584f53c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d3cf94a58b5138472e633a72baaf400 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18dbd82d6f5936641dba0029070bce8d = $(`<div id="html_18dbd82d6f5936641dba0029070bce8d" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>El Farolito Hotel</div>`)[0];
+                popup_1d3cf94a58b5138472e633a72baaf400.setContent(html_18dbd82d6f5936641dba0029070bce8d);
+            
+        
+
+        marker_901c127732500e9ec6a2a9c4d44d1d96.bindPopup(popup_1d3cf94a58b5138472e633a72baaf400)
+        ;
+
+        
+    
+    
+                marker_901c127732500e9ec6a2a9c4d44d1d96.setIcon(icon_b7bf4f2923686e0944dea7db5584f53c);
+            
+    
+            var marker_edc2640a3a3c1e3ba14c0029b25c1d62 = L.marker(
+                [-12.1197519, -77.0300925],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_6a5ed1961d782bd3c888f469f140e8cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3446aac919cb8c9539e0378a848d7a7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_add39970f177306268914bd87fe188eb = $(`<div id="html_add39970f177306268914bd87fe188eb" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Del Pilar Miraflores Hotel</div>`)[0];
+                popup_3446aac919cb8c9539e0378a848d7a7e.setContent(html_add39970f177306268914bd87fe188eb);
+            
+        
+
+        marker_edc2640a3a3c1e3ba14c0029b25c1d62.bindPopup(popup_3446aac919cb8c9539e0378a848d7a7e)
+        ;
+
+        
+    
+    
+                marker_edc2640a3a3c1e3ba14c0029b25c1d62.setIcon(icon_6a5ed1961d782bd3c888f469f140e8cd);
+            
+    
+            var marker_073117c30d19ee3aee8f09666987b0dc = L.marker(
+                [-12.1205417, -77.0283682],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_7fd47e6d5cc1463c43be0f822c66397c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48114a0870e617567e3bf9dc449ce7aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee1f841f1439f94ccc377755f8514173 = $(`<div id="html_ee1f841f1439f94ccc377755f8514173" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Casa Suyay</div>`)[0];
+                popup_48114a0870e617567e3bf9dc449ce7aa.setContent(html_ee1f841f1439f94ccc377755f8514173);
+            
+        
+
+        marker_073117c30d19ee3aee8f09666987b0dc.bindPopup(popup_48114a0870e617567e3bf9dc449ce7aa)
+        ;
+
+        
+    
+    
+                marker_073117c30d19ee3aee8f09666987b0dc.setIcon(icon_7fd47e6d5cc1463c43be0f822c66397c);
+            
+    
+            var marker_5d80494885238fe6abcb81f459efed91 = L.marker(
+                [-12.1219762, -77.0282903],
+                {
+}
+            ).addTo(map_b69fd4ac39598f6e095c702d2c63f95a);
+        
+    
+            var icon_b01ba620c11dc72aa02f27c74bc5cd2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_561eb715bae6806d3588d96c547bd227 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bb82af290624ff33fab432dcd703e7f = $(`<div id="html_8bb82af290624ff33fab432dcd703e7f" style="width: 100.0%; height: 100.0%;"><b>Hotel</b><br>Hotel María Luisa</div>`)[0];
+                popup_561eb715bae6806d3588d96c547bd227.setContent(html_8bb82af290624ff33fab432dcd703e7f);
+            
+        
+
+        marker_5d80494885238fe6abcb81f459efed91.bindPopup(popup_561eb715bae6806d3588d96c547bd227)
+        ;
+
+        
+    
+    
+                marker_5d80494885238fe6abcb81f459efed91.setIcon(icon_b01ba620c11dc72aa02f27c74bc5cd2c);
+            
+</script>
+</html>
